@@ -54,14 +54,20 @@ scripts for train and use our models :
    logreg_predict.py
 
 ---
-## Analysis : Identify useful features for training the algorithm.
+## Analysis
+
+The purpose of the analysis is to identify useful features for training the algorithm.
 
 ### 1. Histograms
 For each subject, a histogram will be generated from the referenced dataset to show the relation of the students scores of said subject and their corresponding house types.
 
 Subject scores that result in a homogeneous distribution of the students (figure 1) are less likely to be significant for the classification, and will be omitted from the training.
 
+![alt text](charts/figure1.png)
+
 On the other hand, subjects that result in distributions such as shown below (figure 2) have more value in determining the classification of the students, and will be emphasized during the training.
+
+![alt text](charts/figure2.png)
 
 ### 2. Scatter plots
 
@@ -69,6 +75,7 @@ A scatter plot is a type of data visualization that uses points to represent the
 
 For every possible pair of subject scores, a scatter plot will be generated. These plots allow us to determine the correlation between each pair of variables. To avoid data redundancy, one of the variables that show significant correlation will be omitted in the algorithm.
 
+![alt text](charts/figure3.png)
 ---
 
 ## Training
