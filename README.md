@@ -108,7 +108,7 @@ After analyzing and screening for significant variables. These variables will be
     
     Now, we have 4 scores (for each house), ranging from 0 to 1, indicating the possibilities that the given student belongs to said houses.
     
-    Obviously, the house that corresponds to the highest score of the 4 is the house that the student will be assigned to.
+    Obviously, the house that corresponds to the highest score of the 4 is the house that the student will be assigned to and we save predictions in a houses.csv file in the out folder.
 
 ---
 
@@ -129,8 +129,8 @@ This project uses [Conda](https://docs.conda.io/projects/conda/en/latest/user-gu
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone git@github.com:pcheron-root/42_DSLR.git
-cd 42_DSLR
+git clone git@github.com:pcheron-root/dslr.git
+cd dslr
 ```
 
 ### 2.Install and activate the conda environment
@@ -169,4 +169,6 @@ make pair
 make train
 
 make predict
+
+make E2E
 ```
